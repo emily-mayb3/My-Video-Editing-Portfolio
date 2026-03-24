@@ -20,6 +20,9 @@ emailInput.addEventListener('blur', sanitize);
 discordInput.addEventListener('blur', sanitize);
 descriptionInput.addEventListener('blur', sanitize);
 
+
+var modal = document.getElementById("form-modal");
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("gform");
 
@@ -34,15 +37,37 @@ document.addEventListener("DOMContentLoaded", function () {
             body: data
         })
             .then(() => {
-                document.getElementById("form-status").innerHTML =
-                    "<p>Submission processed.</p>";
+                document.getElementById("modal-text").innerHTML = `
+                <p>Commission form submitted! I will contact you soon to discuss details about the project.</p>
+                <span class="close">&times;</span>
+                `;
+                modal.style.display = "block";
+
+                var span = document.getElementsByClassName("close")[0];
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
 
                 form.reset();
             })
             .catch(() => {
-                document.getElementById("form-status").innerHTML =
-                    "<p>Something went wrong with submission.</p>";
+                document.getElementById("form-status").innerHTML = `
+                <p>Something went wrong with the submission. Please try again later.</p>
+                <span class="close">&times;</span>
+                `;
+                modal.style.display = "block";
+                var span = document.getElementsByClassName("close")[0];
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
             });
     });
 });
 
+
+
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
