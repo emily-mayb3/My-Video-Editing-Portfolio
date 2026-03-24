@@ -1,0 +1,409 @@
+body {
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    height: 100vh;
+}
+
+a {
+    color: rgb(74, 39, 201);
+}
+
+a:hover {
+    color: rgba(74, 39, 201, 0.534);
+}
+
+@font-face {
+    font-family: 'Splatoon2';
+    src: '/fonts/Splatoon2.otf';
+}
+
+@font-face {
+    font-family: 'Splatoon1';
+    src: '/fonts/Splatoon1.otf';
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 157, 174);
+}
+
+.nav-link {
+    color: black;
+    font-family: 'Splatoon1';
+}
+
+#nav-container {
+    margin: 0%;
+    padding: 0%;
+}
+
+a.nav-link:hover {
+    color: black;
+    background-color: rgb(255, 72, 102);
+}
+
+#SiteLogo {
+    display: flex;
+    width: 4%;
+    min-width: 36px;
+    min-height: 24px;
+    padding: 0.5%;
+}
+
+#SiteLogo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 157, 174);
+    padding: 3%;
+    min-height: 48px;
+    max-height: 96px;
+    margin-top: auto;
+}
+
+#footer-container {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    font-family: 'Splatoon2';
+}
+
+.body-content {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(255, 198, 207);
+    -webkit-mask-image: linear-gradient(to right, transparent, rgb(255, 198, 207) 15%, rgb(255, 198, 207) 85%, transparent);
+    mask-image: linear-gradient(to right, transparent, rgb(255, 198, 207) 15%, rgb(255, 198, 207) 85%, transparent);
+}
+
+.body-content p {
+    font-family: 'Splatoon2';
+}
+
+.main-content {
+    padding: 0 10%;
+}
+
+h1 {
+    font-family: 'Splatoon2';
+    margin-top: 20px;
+}
+
+.line {
+    border-top: 2px solid black;
+    margin-top: 10px;
+}
+
+#site-intro {
+    display: grid;
+    font-size: x-large;
+    grid-template-columns: 60% 40%;
+    place-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.site-button {
+    font-family: 'Splatoon2';
+    font-size: xx-large;
+    padding: 10px 20px;
+    background-color: rgb(255, 177, 222);
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+    width: 60%;
+    max-height: 200px;
+    min-width: 100px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 5px 1px rgb(253, 132, 203);
+}
+
+button.site-button:hover {
+    color: black;
+    background-color: rgb(189, 133, 165);
+}
+
+#about-me {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 60% 40%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: x-large;
+}
+
+#header {
+    font-family: 'Splatoon2';
+    font-size: xx-large;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#about-me-image {
+    width: 70%;
+    border-radius: 50%;
+    background-color: rgb(255, 177, 222);
+}
+
+#credit-text {
+    font-size: medium;
+}
+
+#contact {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 60% 40%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#contact-text {
+    font-size: x-large;
+}
+
+#commission-sheet {
+    width: 550px;
+    min-height: 200px;
+}
+
+form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: "Splatoon2";
+}
+
+.form-element {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-size: x-large;
+}
+
+.form-control {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.radio-buttons-grid {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    place-items: center;
+}
+
+.radio-list {
+    display: inline-block;
+    text-align: left;
+    font-size: large;
+}
+
+.radio-list label {
+    margin-bottom: 5px;
+}
+
+textarea {
+    height: 200px;
+}
+
+#description {
+    width: 60%;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.commission-button {
+    font-family: 'Splatoon2';
+    font-size: x-large;
+    padding: 10px 20px;
+    background-color: rgb(255, 177, 222);
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+    width: 20%;
+    max-height: 200px;
+    min-width: 100px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 5px 1px rgb(253, 132, 203);
+}
+
+button.site-button:hover {
+    color: black;
+    background-color: rgb(189, 133, 165);
+}
+
+.terms-text {
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+#terms-content {
+    min-height: 800px;
+    align-items: flex-start;
+}
+
+#projects-content {
+    min-height: 900px;
+    align-items: flex-start;
+}
+
+.project-types1 {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    place-items: center;
+    margin-bottom: 20px;
+}
+
+.project-types2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+}
+
+.project-thumbnail {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.thumbnail-wrapper {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid rgb(74, 39, 201);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.thumbnail-description {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(235, 235, 235);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: x-large;
+    box-sizing: border-box;
+}
+
+.thumbnail-wrapper:hover .thumbnail-description {
+    visibility: visible;
+    opacity: 1;
+}
+
+.thumbnail-header {
+    font-family: 'Splatoon2';
+    font-size: medium;
+    display: none;
+}
+
+#type-info {
+    font-size: xx-large;
+    margin-top: 20px;
+}
+
+.feature-list {
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+}
+
+.one-video-displays,
+.two-video-displays,
+.three-video-displays {
+    display: grid;
+    margin-top: 20px;
+    width: 100%;
+    place-items: center;
+}
+
+.two-video-displays {
+    grid-template-columns: 50% 50%;
+}
+
+.three-video-displays {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+iframe {
+    width: 90%;
+    border-radius: 20px;
+    aspect-ratio: 16/9;
+    border: 1px solid rgb(74, 39, 201);
+    margin-bottom: 20px;
+}
+
+#youtube-link {
+    font-size: x-large;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.page-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(74, 39, 201);
+}
+
+@media screen and (max-width: 1000px) {
+    .thumbnail-description {
+        font-size: large;
+    }
+
+    .commission-button {
+        font-size: medium
+    }
+
+    textarea {
+        height: 300px;
+    }
+
+    #commission-sheet {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .thumbnail-header {
+        display: block;
+    }
+
+    .thumbnail-description {
+        font-size: medium;
+    }
+
+    .feature-list {
+        font-size: large;
+    }
+
+    #commission-sheet {
+        width: 250px;
+    }
+}
