@@ -15,12 +15,12 @@
 } */
 @font-face {
     font-family: 'Splatoon2';
-    src: '../fonts/Splatoon2.otf';
+    src: url('../fonts/Splatoon2.otf');
 }
 
 @font-face {
     font-family: 'Splatoon1';
-    src: '../fonts/Splatoon1.otf';
+    src: url('../fonts/Splatoon1.otf');
 }
 
 body {
