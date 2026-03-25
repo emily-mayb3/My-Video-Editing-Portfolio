@@ -135,6 +135,7 @@ h1 {
     font-family: 'Splatoon2';
     font-size: xx-large;
     padding: 10px 20px;
+    color: black;
     background-color: rgb(255, 177, 222);
     border: 2px solid rgb(0, 0, 0);
     cursor: pointer;
@@ -239,6 +240,7 @@ textarea {
     font-family: 'Splatoon2';
     font-size: x-large;
     padding: 10px 20px;
+    color: black;
     background-color: rgb(255, 177, 222);
     border: 2px solid rgb(0, 0, 0);
     cursor: pointer;
