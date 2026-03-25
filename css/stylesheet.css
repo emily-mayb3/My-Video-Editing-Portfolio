@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
     font-family: 'Splatoon1';
     src: url('../fonts/splatoon1-webfont.woff2') format('woff2'),
         url('../fonts/splatoon1-webfont.woff') format('woff');
@@ -12,15 +12,6 @@
         url('../fonts/splatoon2-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-} */
-@font-face {
-    font-family: 'Splatoon2';
-    src: url('../fonts/Splatoon2.otf');
-}
-
-@font-face {
-    font-family: 'Splatoon1';
-    src: url('../fonts/Splatoon1.otf');
 }
 
 body {
@@ -144,7 +135,7 @@ h1 {
     font-family: 'Splatoon2';
     font-size: xx-large;
     padding: 10px 20px;
-    color: black;
+    color: black !important;
     background-color: rgb(255, 177, 222);
     border: 2px solid rgb(0, 0, 0);
     cursor: pointer;
@@ -249,7 +240,7 @@ textarea {
     font-family: 'Splatoon2';
     font-size: x-large;
     padding: 10px 20px;
-    color: black;
+    color: black !important;
     background-color: rgb(255, 177, 222);
     border: 2px solid rgb(0, 0, 0);
     cursor: pointer;
