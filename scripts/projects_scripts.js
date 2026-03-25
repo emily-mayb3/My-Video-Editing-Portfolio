@@ -181,7 +181,7 @@ function displayVideoTypeInfo(type) {
               - Creative transitions<br>
               - Creative effects<br>
               - Very deliberate clip placement/ordering<br>
-              - Creation time typically takes 60 minutes per 10 seconds of video length.
+              - Creation time typically takes 60 minutes per 10 seconds of video length.<br>
               - Price will vary widely based on the requirements of the project.
             </p>
         </div>
