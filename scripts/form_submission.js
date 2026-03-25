@@ -29,6 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (e) {
         e.preventDefault();
 
+        if (document.getElementById("website").value !== "") {
+            return
+        };
+
         const data = new URLSearchParams(new FormData(form));
 
         fetch("https://docs.google.com/forms/d/e/1FAIpQLSeNJAZ9laF3uHcG6zucdeUFaO-C3l05nrEFh14tHmHDdnwx5A/formResponse", {

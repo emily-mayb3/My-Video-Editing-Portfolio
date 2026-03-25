@@ -45,25 +45,24 @@
           <button class="site-button" onclick="window.location.href='projects.html'">View My Work →</button>
         </div>
 
-        <div id="about-me">
-          <p></p>
+        <div>
           <h2 id="header">ABOUT ME</h2>
 
-          <p>
-            I have been editing videos casually for about 7 years. 
-            Most of this work focuses on Splatoon, but I have 
-            ventured to other video games.
-          </p>
-          <img src="images/RadishArtSquiffer.png" id="about-me-image" alt="Image of Emily holding a squiffer">
+          <div id="about-me">
+            <p>
+              I have been editing videos casually for about 7 years. 
+              Most of this work focuses on Splatoon, but I have 
+              ventured to other video games.
+            </p>
+            <img src="images/RadishArtSquiffer.png" id="about-me-image" alt="Image of Emily holding a squiffer">
 
-          <p></p>
-          <p id="credit-text">Icon by <a href="https://www.twitter.com/_radishes">@radishes</a></p>
+            <p></p>
+            <p id="credit-text">Icon by <a href="https://www.twitter.com/_radishes">@radishes</a></p>
+          </div>
+          
         </div>
 
-        <div id="contact">
-          <p></p>
-          <h2 id="header">CONTACT ME</h2>
-        </div>
+        <h2 id="header">CONTACT ME</h2>
 
         <p id="contact-text">
           If you are interested in commissioning me, please read my <a href="terms.html">terms of service</a>,
@@ -101,6 +100,11 @@
           <div class="form-element">
             <label for="description" class="form-label">Project Description</label><br>
             <textarea class="form-control" name="entry.445112863" id="entry.445112863" placeholder="Project details, ideas, etc." required></textarea>
+          </div>
+
+          <div class="form-element" id="website-form">
+            <label for="website" class="form-label" id="website" tabindex="-1" aria-hidden="true">Website</label><br>
+            <input type="text" class="form-control" name="website" id="website" placeholder="www.domain.com" tabindex="-1" aria-hidden="true">
           </div>
 
           <div class="form-element">
