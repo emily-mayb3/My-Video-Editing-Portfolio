@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        if (document.getElementById("website").value !== "") {
+        if (document.getElementById("website").value !== undefined) {
             return
         };
 
