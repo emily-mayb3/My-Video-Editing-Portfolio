@@ -270,6 +270,9 @@ button.commission-button:hover {
 }
 
 #form-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(255, 198, 206);
     margin: 15% auto;
     padding: 20px;
@@ -281,11 +284,17 @@ button.commission-button:hover {
     min-height: 200px;
 }
 
-#modal-text {
-    display: flex;
+#modal-text{
+    display: grid;
+    grid-template-columns: 85% 15%;
+    place-items: center;
+}
+
+#modal-text p {
     justify-content: center;
     align-items: center;
     height: 100%;
+    margin-bottom: 0 !important;
 }
 
 .close {
